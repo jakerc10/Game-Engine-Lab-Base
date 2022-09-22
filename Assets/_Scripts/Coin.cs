@@ -6,10 +6,11 @@ public class Coin : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
     {
-       if(other.collider.tag == "Player")
+      if(other.collider.tag == "Player")
         {
             ScoreManager.instance.ChangeScore(1);
             Destroy(gameObject);
+
         }
     }
 }
