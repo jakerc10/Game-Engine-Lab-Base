@@ -6,7 +6,7 @@ public class ScoreManager : MonoBehaviour
 
 {
     public static ScoreManager instance;
-    int score = 0;
+    int HP = 0;
     // Start is called before the first frame update
     void Awake()
     {
@@ -16,9 +16,9 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    public void ChangeScore(int coinValue)
+    public void HealthBoost(int foodValue)
     {
-        score += coinValue;
-        Debug.Log(score);
+        HP += foodValue;
+        Debug.Log(HP);
     }
 }
